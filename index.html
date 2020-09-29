@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c45537b394.js" crossorigin="anonymous"></script>
+    </head>
+    <nav class="navbar  navbar-light bg-light fixed-top">
+        <div class="container-md">
+        <div class="row">
+            <div class="col">
+        <a class="navbar-brand" href="#">
+          <img src="/img/LOGO_MINERD.png" width="68" height="38" class="d-inline-block align-top" alt="" loading="lazy">
+          MINERD
+        </a>
+         </div>
+       </div>
+    </div>
+      </nav>
+
+    <body>
+        <main>
+
+            <ul class="list-float-buttons">
+                <li>
+                    <a id="btn-list" class="floating-button list">
+                    <i class="fas fa-clipboard-list"></i>
+                    </a>
+                </li>
+                <li>
+                    <a id="btn-home" class="floating-button home">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+        </ul>
+
+            <section id="pg-title" class="container pg-title ">
+                 <h3 id="title-ms1">Registro</h3> <h3 id="title-ms2">de profesores</h3>
+                 <p>Bye brecha digital!</p>
+            </section>
+
+<!--             primary form
+ -->
+            <section id="section-primary-form" class="container">                                              
+                <div class=" div-hero row justify-content-center">
+                    <div class="col-9 col-sm-9 col-md-6 col-lg-4 align-self-center my-box p-5">
+                        <form method="dialog" id="primary-form" action="">
+                            <div class="row justify-content-center">
+                                <div class="form-group col-12">
+                                    <label class="lapel-input-cedula" for="primary-cedula">Ingrese su cedula para poder registrarse</label>
+                                    <input class="form-control"  name="cedula" id="primary-input-cedula">
+                                    <div id="primary-input-cedula-validation"  class="invalid-feedback"></div>
+                                 </div>
+                                <div class="col-4">
+                                    <button  id="btnAceptar" class="btn btn-danger" type="submit" >
+                                        <span class="" role="status" aria-hidden="true"></span>
+                                        Aceptar
+                                      </button>   
+                                </div>     
+                                                  
+                            </div>
+                        </form>
+                     </div>
+                 </div>
+            </section>  
+
+<!--             secundary form
+ -->            
+            <section id="secundary-form-section" class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10 col-md-8 col-lg-6 mb-5 div-secundary-form">
+
+                        <form action="" method="dialog" id="secundary-form">
+                            <div class="form-group">
+                                <div class="secundary-form-ms">
+                                <p id="secundary-form-ms">Por favor completar este formulario</p>
+                                    </div>
+                                <div class="form-group">
+                                <label for="secundary-input-cedula">Cedula</label>
+                                <input type="number" readonly class="form-control" name="cedula" id="secundary-input-cedula">
+                                    </div>                        
+                                <div class="form-group">
+                                <label for="secundary-input-correo">Correo</label>
+                                <input class="form-control" name="correo" id="secundary-input-correo">
+                                <div class="invalid-feedback"></div>
+                                    </div>
+                                <div class="form-group">
+                                <label for="secundary-input-escuela">Escuela</label>
+                                <input  class="form-control" name="escuela" id="secundary-input-escuela">
+                                <div class="invalid-feedback"></div>
+
+                                <div class="form-group mt-2">
+                                <label for="textarea-pc-desciption">Descripcion de la computadora</label>
+                                <textarea name="textarea-description"  class="form-control textarea-description" id="textarea-pc-desciption" rows="3"></textarea>
+                                <div class="invalid-feedback"></div>
+                                  </div>
+                                <div class="form-group">
+                                <label for="secundary-input-teacher-foto">Foto recibiendo la computadora</label>
+                                <input type="file" class="form-control" name="teacher-foto" id="secundary-input-teacher-foto">
+                                <div class="invalid-feedback"></div>
+                                    </div>
+                                <div class="foto">
+                                    <img src="" alt="" id="preview-photo">
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <input type="submit" value="Registrar" id="btn-secundary-form" class="btn btn-danger pl-4 pr-4">
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section id="section-table" class="container d-flex justify-content-center">
+                <div class="table-responsive">
+                <table class="table" id="table">
+                    <thead class="thead-light">
+                        <tr>
+                            <th scope="col">
+                                #
+                            </th>
+                            <th scope="col">
+                                Cedula
+                            </th>
+                            <th scope="col">
+                                Nombres
+                            </th>
+                            <th scope="col">
+                                Apellidos
+                            </th>
+                            <th scope="col">
+                                Fecha nacimiento
+                            </th>
+                            <th scope="col">
+                                Sexo
+                            </th>
+                            <th scope="col">
+                                Correo
+                            </th scope="col">
+                            <th scope="col">
+                                Escuela
+                            </th>
+                            <th></th>
+                            <th></th>
+                            
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbody-persons">
+                         <tr>
+                            <th scope="col">1</th>
+                            <td><input type="text" name="table-cedula" readonly class="form-control form-control-sm"></td> 
+                            <td><input type="text" name="table-nombres" readonly class="form-control form-control-sm"></td> 
+                            <td><input type="text" name="table-apellidos" readonly class="form-control form-control-sm"></td> 
+                            <td><input type="text" name="table-fecha-nacimiento" readonly class="form-control form-control-sm"></td> 
+                            <td><input type="text" name="table-sexo" readonly class="form-control form-control-sm"></td> 
+                            <td><input type="text" name="table-correo" readonly class="form-control form-control-sm"></td> 
+                            <td><input type="text" name="table-escuala" readonly class="form-control form-control-sm"></td> 
+                            <td><i class="fas fa-edit" onclick="editPerson()" ></i></td>
+                            <td><i class="fas fa-print" onclick="editPerson()"></i></td>
+                        </tr> 
+
+                    </tbody>
+                </table>
+            </div>
+            </section>
+
+            <section id="section-print-person" class="container">
+                <div class="row justify-content-center div-print ">
+                    <div class="col">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                            <div class="row justify-content-center">
+                                <div>
+                                <div class="div-perfil-photo">
+                                    <img class="perfil-photo" id="perfil-photo" src="" alt="">
+                                </div>
+                               </div>
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <div class="div mt-4">
+                                    <p class="d-inline-block font-weight-bold">Cedula: </p>
+                                    <p class="d-inline-block" id="cedula-print">Hola</p>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <div class="div">
+                                    <p class="d-inline-block font-weight-bold">Nombres: </p>
+                                    <p class="d-inline-block" id="nombres-print">Hola</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="div">
+                                    <p class="d-inline-block font-weight-bold">Apellidos: </p>
+                                    <p class="d-inline-block" id="apellidos-print">Hola</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="div">
+                                    <p class="d-inline-block font-weight-bold">Fecha nacimiento: </p>
+                                    <p class="d-inline-block" id="fecha-nacimiento-print">Hola</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="div">
+                                    <p class="d-inline-block font-weight-bold">Sexo: </p>
+                                    <p class="d-inline-block" id="sexo-print">Hola</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="div">
+                                    <p class="d-inline-block font-weight-bold">Correo: </p>
+                                    <p class="d-inline-block" id="correo-print" >Hola</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="div">
+                                    <p class="d-inline-block font-weight-bold">Descripcion computadora: </p>
+                                    <p class="d-inline-block" id="descripcion-pc-print">Hola</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="div">
+                                    <p class="d-inline-block font-weight-bold">Escuela: </p>
+                                    <p class="d-inline-block" id="escuela-print">Hola</p>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="div">
+                                    <p class="d-inline-block font-weight-bold">Recibiendo PC: </p>
+                                    <img class="d-inline-block photo-computer-pirnt" id="foto-computer-print" src="" alt="">
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="div">
+                                    <input type="button" class="btn btn-danger" value="Imprimir" onclick="print()">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <div id="wave">
+                <svg  preserveAspectRatio="none" class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path class="" fill=" #fb2222" fill-opacity="1" d="M0,64L40,64C80,64,160,64,240,101.3C320,139,400,213,480,229.3C560,245,640,203,720,186.7C800,171,880,181,960,202.7C1040,224,1120,256,1200,240C1280,224,1360,160,1400,128L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+                </svg>
+              </div>
+
+        </main>
+    </body>
+
+    
+
+    
+
+
+    <footer class="page-footer footer font-small">
+        <!-- <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> MINERD.com</a>
+          </div> -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="/app.js"></script>
+        <script>           
+        </script>
+    </footer>
+</html>

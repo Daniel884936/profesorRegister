@@ -1,0 +1,198 @@
+.my-row{
+    height: 180px;
+}
+
+.my-box{
+    height: 220px;
+    background: #fafafb;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    padding: 50px;
+}
+.lapel-input-cedula{
+    color: #4686ff;
+}
+
+.img-logo{
+    width: 190px;
+    height: 100px;
+    /* background: url(/img/LOGO_MINERD.png) center no-repeat;
+    background-size: cover; */
+}
+
+.div-img{
+    width: 190px;
+    height: 100px;
+}
+
+.img-hero{
+    width: 760px;
+    height: 500px;
+}
+
+.footer{
+    background: #fb2222;
+}
+
+.div-hero{
+    height: 40vh;
+}
+
+.wave{
+    height: 40vh;
+}
+.pg-title{
+    margin-top: 100px;
+}
+
+#title-ms1{
+    color: #fb2222;
+    display: inline;
+}
+
+#title-ms2{
+color:#4686ff;
+display: inline;
+}
+
+.list-float-buttons{
+    position: fixed;
+    right: 45px;
+    list-style: none;
+    z-index: 100;
+}
+
+.list-float-buttons >li{
+    display: inline-block;
+}
+
+.floating-button{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .5);
+    margin: 8px;
+}
+
+.home{
+    color: #3087f8;
+}
+
+.list{
+    color: #fb2222;
+}
+
+
+#wave{
+    width: 100%;
+}
+
+.wave{
+    width: 100%;
+}
+
+
+.div-secundary-form, .div-print{
+    background: #fafafb;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, .5);
+    margin: 10px;
+}
+
+.div-print{
+    margin-left: 40X;
+    margin-right: 40PX;
+}
+
+.secundary-form-ms{
+display: flex;
+justify-content: center;
+}
+
+#secundary-form-ms{
+    font-size: 18px;
+}
+
+.textarea-description{
+    overflow-y: scroll;
+    resize: none;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+   /*  display: none; */
+}
+
+.foto>img, .perfil-photo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.perfil-photo{
+    border: 3px solid #fb2222;
+    border-radius: 100%;
+}
+
+.fas{
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.fa-edit{   
+    color: #3087f8;
+}
+
+
+
+.fa-print{
+    color: #fb2222;   
+}
+
+.fa-check{
+    color: chartreuse;
+
+}
+
+.fa-ban{
+    color: #fb2222;
+}
+
+.div-print{
+    
+}
+
+
+.div-perfil-photo{
+    
+}
+
+p{
+    font-size: 17px;
+}
+
+
+.photo-computer-pirnt{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 4px solid #4686ff;
+}
+
+
+/* display none */
+
+#secundary-form-section, #table,
+ #section-print-person, #btn-home,#preview-photo {
+    display: none;
+}
